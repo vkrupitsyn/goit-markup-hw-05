@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container flex-wrap">
+    <header class="header">
+      <div class="container header-wrap">
         <nav class="main-nav">
           <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-          <ul class="site-nav list">
+          <ul class="nav-list list">
             <li class="item"><a class="link" href="./index.html">Студия</a></li>
             <li class="item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
             <li class="item"><a class="link" href="#">Контакты</a></li>
@@ -45,100 +45,172 @@
       </div>
     </header>
     <main>
-      <section class="portfolio section">
+      <section class="section portfolio">
         <div class="container">
           <h1 class="hero-title visually-hidden">Портфолио</h1>
-          <ul class="list portfolio-btn">
-            <li class="item"><button class="button link" type="button">Все</button></li>
-            <li class="item"><button class="button link" type="button">Веб-сайты</button></li>
-            <li class="item"><button class="button link" type="button">Приложения</button></li>
-            <li class="item"><button class="button link" type="button">Дизайн</button></li>
-            <li class="item"><button class="button link" type="button">Маркетинг</button></li>
+          <ul class="list portf-btn">
+            <li class="item"><button class="link" type="button">Все</button></li>
+            <li class="item"><button class="link" type="button">Веб-сайты</button></li>
+            <li class="item"><button class="link" type="button">Приложения</button></li>
+            <li class="item"><button class="link" type="button">Дизайн</button></li>
+            <li class="item"><button class="link" type="button">Маркетинг</button></li>
           </ul>
-          <ul class="list portfolio-list">
+          <ul class="portf-list list">
             <li class="item">
-              <a href="#" class="link"
-                ><img class="img" src="./images/technocrack.jpg" alt="Веб-сайт" width="370" />
-                <div class="dscr">
+              <a href="#" class="link">
+                <div class="portf-thumb">
+                  <p class="portf-thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                  <img class="img" src="./images/technocrack.jpg" alt="Веб-сайт" width="370" />
+                </div>
+
+                <div class="portf-descr">
                   <h2 class="title">Технокряк</h2>
-                  <p class="dscr-text">Веб-сайт</p>
+                  <p class="descr-text">Веб-сайт</p>
                 </div></a
               >
             </li>
             <li class="item">
-              <a href="#" class="link"
-                ><img
-                  class="img"
-                  src="./images/basketball.jpg"
-                  alt="New Orlean vs Golden Star"
-                  width="370"
-                />
-                <div class="dscr">
+              <a href="#" class="link">
+                <div class="portf-thumb">
+                  <p class="portf-thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                  <img
+                    class="img"
+                    src="./images/basketball.jpg"
+                    alt="New Orlean vs Golden Star"
+                    width="370"
+                  />
+                </div>
+
+                <div class="portf-descr">
                   <h2 class="title">Постер New Orlean vs Golden Star</h2>
-                  <p class="dscr-text">Дизайн</p>
+                  <p class="descr-text">Дизайн</p>
                 </div></a
               >
             </li>
             <li class="item">
-              <a href="#" class="link"
-                ><img class="img" src="./images/seafood.jpg" alt="Seafood" width="370" />
-                <div class="dscr">
+              <a href="#" class="link">
+                <div class="portf-thumb">
+                  <p class="portf-thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                  <img class="img" src="./images/seafood.jpg" alt="Seafood" width="370" />
+                </div>
+
+                <div class="portf-descr">
                   <h2 class="title">Ресторан Seafood</h2>
-                  <p class="dscr-text">Приложение</p>
+                  <p class="descr-text">Приложение</p>
                 </div></a
               >
             </li>
             <li class="item">
-              <a href="#" class="link"
-                ><img class="img" src="./images/prime.jpg" alt="Headphones" width="370" />
-                <div class="dscr">
+              <a href="#" class="link">
+                <div class="portf-thumb">
+                  <p class="portf-thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                  <img class="img" src="./images/prime.jpg" alt="Headphones" width="370" />
+                </div>
+
+                <div class="portf-descr">
                   <h2 class="title">Проект Prime</h2>
-                  <p class="dscr-text">Маркетинг</p>
+                  <p class="descr-text">Маркетинг</p>
                 </div></a
               >
             </li>
             <li class="item">
-              <a href="#" class="link"
-                ><img class="img" src="./images/boxes.jpg" alt="Boxes" width="370" />
-                <div class="dscr">
+              <a href="#" class="link">
+                <div class="portf-thumb">
+                  <p class="portf-thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                  <img class="img" src="./images/boxes.jpg" alt="Boxes" width="370" />
+                </div>
+
+                <div class="portf-descr">
                   <h2 class="title">Проект Boxes</h2>
-                  <p class="dscr-text">Приложение</p>
+                  <p class="descr-text">Приложение</p>
                 </div></a
               >
             </li>
             <li class="item">
-              <a href="#" class="link"
-                ><img class="img" src="./images/inspiration.jpg" alt="Display" width="370" />
-                <div class="dscr">
+              <a href="#" class="link">
+                <div class="portf-thumb">
+                  <p class="portf-thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                  <img class="img" src="./images/inspiration.jpg" alt="Display" width="370" />
+                </div>
+
+                <div class="portf-descr">
                   <h2 class="title">Inspiration has no Borders</h2>
-                  <p class="dscr-text">Веб-сайт</p>
+                  <p class="descr-text">Веб-сайт</p>
                 </div></a
               >
             </li>
             <li class="item">
-              <a href="#" class="link"
-                ><img class="img" src="./images/limited-ed.jpg" alt="Magazine" width="370" />
-                <div class="dscr">
+              <a href="#" class="link">
+                <div class="portf-thumb">
+                  <p class="portf-thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                  <img class="img" src="./images/limited-ed.jpg" alt="Magazine" width="370" />
+                </div>
+
+                <div class="portf-descr">
                   <h2 class="title">Издание Limited Edition</h2>
-                  <p class="dscr-text">Дизайн</p>
+                  <p class="descr-text">Дизайн</p>
                 </div></a
               >
             </li>
             <li class="item">
-              <a href="#" class="link"
-                ><img class="img" src="./images/projectlab.jpg" alt="Label" width="370" />
-                <div class="dscr">
+              <a href="#" class="link">
+                <div class="portf-thumb">
+                  <p class="portf-thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                  <img class="img" src="./images/projectlab.jpg" alt="Label" width="370" />
+                </div>
+
+                <div class="portf-descr">
                   <h2 class="title">Проект LAB</h2>
-                  <p class="dscr-text">Маркетинг</p>
+                  <p class="descr-text">Маркетинг</p>
                 </div></a
               >
             </li>
             <li class="item">
-              <a href="#" class="link"
-                ><img class="img" src="./images/growing.jpg" alt="Laptop" width="370" />
-                <div class="dscr">
+              <a href="#" class="link">
+                <div class="portf-thumb">
+                  <p class="portf-thumb-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                  <img class="img" src="./images/growing.jpg" alt="Laptop" width="370" />
+                </div>
+
+                <div class="portf-descr">
                   <h2 class="title">Growing Business</h2>
-                  <p class="dscr-text">Приложение</p>
+                  <p class="descr-text">Приложение</p>
                 </div></a
               >
             </li>
@@ -151,7 +223,7 @@
         <div class="wrap">
           <a href="./index.html" class="logo"><span>Web</span>Studio</a>
           <address class="footer-adress">
-            <ul class="list">
+            <ul class="list adress-list">
               <li class="item"><p>г. Киев, пр-т Леси Украинки, 26</p></li>
               <li class="item">
                 <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -162,7 +234,7 @@
         </div>
         <div class="wrap">
           <p class="title">Присоединяйтесь</p>
-          <ul class="social-net-footer">
+          <ul class="soc-list-footer">
             <li class="social-net-item">
               <a class="link footer-icon" href="#"
                 ><svg class="icon" width="20" height="20">

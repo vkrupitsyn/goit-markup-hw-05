@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container flex-wrap">
+    <header class="header">
+      <div class="container header-wrap">
         <nav class="main-nav">
           <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-          <ul class="site-nav list">
+          <ul class="nav-list list">
             <li class="item"><a class="link current" href="./index.html">Студия</a></li>
             <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
             <li class="item"><a class="link" href="#">Контакты</a></li>
@@ -51,10 +51,10 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hero-button" type="button">Заказать услугу</button>
+          <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
-      <section class="features section">
+      <section class="section">
         <div class="container">
           <h2 class="title visually-hidden">Наши преимущества</h2>
           <ul class="list features-list">
@@ -64,7 +64,7 @@
                   <use href="./images/symbol-defs.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Внимание к деталям</h3>
+              <h3 class="subtitle">Внимание к деталям</h3>
               <p class="features-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
@@ -75,7 +75,7 @@
                   <use href="./images/symbol-defs.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Пунктуальность</h3>
+              <h3 class="subtitle">Пунктуальность</h3>
               <p class="features-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
@@ -86,7 +86,7 @@
                   <use href="./images/symbol-defs.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Планирование</h3>
+              <h3 class="subtitle">Планирование</h3>
               <p class="features-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
@@ -97,7 +97,7 @@
                   <use href="./images/symbol-defs.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Современные технологии</h3>
+              <h3 class="subtitle">Современные технологии</h3>
               <p class="features-text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
@@ -105,23 +105,38 @@
           </ul>
         </div>
       </section>
-      <section class="works section">
+      <section class="section works">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="list works-list">
             <li class="item">
-              <img class="img" src="./images/img-keyboard.jpg" alt="keyboard" width="370" />
+              <div class="works-thumb">
+                <img class="img" src="./images/img-keyboard.jpg" alt="keyboard" width="370" />
+                <div class="thumb-descr">
+                  <h3 class="subtitle">Десктопные приложения</h3>
+                </div>
+              </div>
             </li>
             <li class="item">
-              <img class="img" src="./images/img-smartphone.jpg" alt="phone" width="370" />
+              <div class="works-thumb">
+                <img class="img" src="./images/img-smartphone.jpg" alt="phone" width="370" />
+                <div class="thumb-descr">
+                  <h3 class="subtitle">Мобильные приложения</h3>
+                </div>
+              </div>
             </li>
             <li class="item">
-              <img class="img" src="./images/img-tablet.jpg" alt="tablet" width="370" />
+              <div class="works-thumb">
+                <img class="img" src="./images/img-tablet.jpg" alt="tablet" width="370" />
+                <div class="thumb-descr">
+                  <h3 class="subtitle">Дизайнерские решения</h3>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="team section">
+      <section class="section team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="list team-list">
@@ -252,10 +267,10 @@
           </ul>
         </div>
       </section>
-      <section class="customers section">
+      <section class="section customers">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
-          <ul class="list company-list">
+          <ul class="list customers-list">
             <li class="item">
               <a href="#" class="link">
                 <svg class="icon" width="106" height="60">
@@ -302,7 +317,7 @@
         <div class="wrap">
           <a href="./index.html" class="logo"><span>Web</span>Studio</a>
           <address class="footer-adress">
-            <ul class="list">
+            <ul class="list adress-list">
               <li class="item"><p>г. Киев, пр-т Леси Украинки, 26</p></li>
               <li class="item">
                 <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -313,7 +328,7 @@
         </div>
         <div class="wrap">
           <p class="title">Присоединяйтесь</p>
-          <ul class="social-net-footer">
+          <ul class="soc-list-footer">
             <li class="social-net-item">
               <a class="link footer-icon" href="#"
                 ><svg class="icon" width="20" height="20">
@@ -342,6 +357,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" type="button" data-modal-close>
+          <svg class="close-btn-icon" width="18px" height="18px">
+            <use href="./images/symbol-defs.svg#close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>
